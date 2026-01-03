@@ -13,6 +13,7 @@
 #if 1  /* Includes */
 #include <avr/io.h>
 #include <util/delay.h>
+#include "sysHwCfg_init.h"
 #endif /* Includes */
 
 /* ----------------------------------------- Defines ---------------------------------------------*/
@@ -66,9 +67,10 @@
  */
 int main(void)
 {
-    // Set PC7 (pin 13 on Leonardo) as output
-    DDRC |= (1 << DDC7);
+    // Initialization
+    gfSysHwCfg_Init();
 
+    // Task
     while (1)
     {
         // Toggle LED
