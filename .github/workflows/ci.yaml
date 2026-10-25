@@ -1,0 +1,18 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  sumobot:
+    uses: t0biasm/emb-ci/.github/workflows/build-bazel.yaml@v1.1.0
+    with:
+      project: prj-sumobot
+      target: //applications/sumobot:app
+      config: atmega32u4
+      # extensionless "app" is the ELF produced by cc_binary_avr8
+      artifact-patterns: "*.hex *.elf *.bin app"
+      # AVR build does not need the nested FreeRTOS submodule of emb-platform
+      submodules: "true"
+    secrets: inherit

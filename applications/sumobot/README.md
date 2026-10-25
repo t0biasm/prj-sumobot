@@ -115,5 +115,5 @@ Per -[hidden]-> BSW
 ## Build Commands
 - Build SW project
 ```starlark
-bazel build --config=atmega32u4 //machine/sumobotBlackMagic:app
+bazel build --config=atmega32u4 //applications/sumobot:app
 ```

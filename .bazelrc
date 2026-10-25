@@ -1,0 +1,2 @@
+import %workspace%/toolchain/emb-toolchain/shared.bazelrc
+try-import %workspace%/user.bazelrc

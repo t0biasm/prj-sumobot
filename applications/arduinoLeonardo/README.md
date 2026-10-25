@@ -3,5 +3,5 @@
 ## Build Commands
 - Build SW project
 ```starlark
-bazel build --config=atmega32u4 //machine/evalBoard/arduinoLeonardo:app
+bazel build --config=atmega32u4 //applications/arduinoLeonardo:app
 ```

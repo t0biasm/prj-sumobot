@@ -3,13 +3,13 @@ cc_test(
     size = "small",
     srcs = [
         "sysHwCfg_init_test.cc",
-        "//machine/sumobotBlackMagic/components/sysHwCfg/code:sources",
-        "//machine/sumobotBlackMagic/components/sysHwCfg/code:headers",
+        "//applications/sumobot/components/sysHwCfg/code:sources",
+        "//applications/sumobot/components/sysHwCfg/code:headers",
     ],
     deps = [
         "@googletest//:gtest",
         "@googletest//:gtest_main",
-        "//platforms/avr8/mcal/test:mcal_avr_h",
+        "@emb_platform//avr8/mcal/test:mcal_avr_h",
     ],
     includes = [
         "../code",

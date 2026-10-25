@@ -1,0 +1,17 @@
+module(name = "prj_sumobot", version = "0.1.0")
+
+# --------------------- Shared repositories (git submodules) --------------------- #
+bazel_dep(name = "emb_toolchain", version = "0.1.0")
+bazel_dep(name = "emb_platform", version = "0.1.0")
+local_path_override(module_name = "emb_toolchain", path = "toolchain/emb-toolchain")
+local_path_override(module_name = "emb_platform", path = "platform/emb-platform")
+
+# ------------------------------ General dependencies ----------------------------- #
+bazel_dep(name = "platforms", version = "1.0.0")
+bazel_dep(name = "bazel_skylib", version = "1.8.2")
+bazel_dep(name = "googletest", version = "1.17.0")
+
+# Doxygen Integration
+bazel_dep(name = "rules_doxygen", version = "2.6.1")
+doxygen_extension = use_extension("@rules_doxygen//:extensions.bzl", "doxygen_extension")
+use_repo(doxygen_extension, "doxygen")

@@ -1,13 +1,13 @@
 filegroup(
     name = "sources",
     srcs = glob(["*.c"]),
-    visibility = ["//machine/sumobotBlackMagic:__subpackages__"],
+    visibility = ["//applications/sumobot:__subpackages__"],
 )
 
 filegroup(
     name = "headers",
     srcs = glob(["*.h"]),
-    visibility = ["//machine/sumobotBlackMagic:__subpackages__"],
+    visibility = ["//applications/sumobot:__subpackages__"],
 )
 
 cc_library(
@@ -16,5 +16,5 @@ cc_library(
     hdrs = [":headers"],
     deps = [],
     includes = ["."],
-    visibility = ["//machine/sumobotBlackMagic:__subpackages__"],
+    visibility = ["//applications/sumobot:__subpackages__"],
 )

@@ -1,4 +1,4 @@
-load("//platforms/avr8/toolchain:cc_binary_avr8.bzl", "cc_binary_avr8")
+load("@emb_toolchain//platforms/avr8/toolchain:cc_binary_avr8.bzl", "cc_binary_avr8")
 load("@doxygen//:doxygen.bzl", "doxygen")
 
 # Example AVR binary
@@ -22,7 +22,7 @@ doxygen(
         "PROJECT_NAME = Arduino Leonardo SW",
         "GENERATE_HTML = YES",
         "GENERATE_LATEX = NO",
-        "USE_MDFILE_AS_MAINPAGE = machine/evalBoard/arduinoLeonardo/README.md",
+        "USE_MDFILE_AS_MAINPAGE = applications/arduinoLeonardo/README.md",
         "EXTRACT_ALL = YES",
         "EXTRACT_PRIVATE = YES",
         "EXTRACT_STATIC = YES",
@@ -56,6 +56,6 @@ doxygen(
     # The sources of the main target and its dependencies will be included.
     # No compilation will be performed, so compile error won't be reported.
     deps = [
-        "//machine/evalBoard/arduinoLeonardo:app"
+        "//applications/arduinoLeonardo:app"
     ],
 )
