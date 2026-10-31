@@ -6,8 +6,8 @@ Software for the Sumo Robot "Black Magic" (ATmega32U4), plus an Arduino Leonardo
 |---|---|
 | `applications/sumobot` | Sumobot application and components (see its README for the SW architecture) |
 | `applications/arduinoLeonardo` | Arduino Leonardo kick-off application |
-| `toolchain/emb-toolchain` | submodule: [emb-toolchain](https://github.com/t0biasm/emb-toolchain), compilers and tooling |
-| `platform/emb-platform` | submodule: [emb-platform](https://github.com/t0biasm/emb-platform), MCU platform code |
+| `emb-toolchain` | submodule: [emb-toolchain](https://github.com/t0biasm/emb-toolchain), compilers and tooling |
+| `emb-platform` | submodule: [emb-platform](https://github.com/t0biasm/emb-platform), MCU platform code |
 
 ## Getting started
 ```
