@@ -2,7 +2,9 @@ name: ci
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ main, "release/**" ]
+  push:
+    branches: [ "bot/**" ]    # submodule bumps of the propagation bot
 
 jobs:
   sumobot:

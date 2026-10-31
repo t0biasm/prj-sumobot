@@ -1,0 +1,12 @@
+project = "prj-sumobot"
+
+# Submodules this branch follows. Not listed = frozen.
+# track: branch, or "tag:<glob>"; mode: auto (push after green CI), pr, off.
+# Release branches must follow a maintained line (e.g. "release/1.x"), not main.
+[follow."toolchain/emb-toolchain"]
+track = "main"
+mode = "auto"
+
+[follow."platform/emb-platform"]
+track = "main"
+mode = "auto"
