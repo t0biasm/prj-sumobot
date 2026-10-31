@@ -1,6 +1,6 @@
-[submodule "toolchain/emb-toolchain"]
-	path = toolchain/emb-toolchain
+[submodule "emb-toolchain"]
+	path = emb-toolchain
 	url = https://github.com/t0biasm/emb-toolchain.git
-[submodule "platform/emb-platform"]
-	path = platform/emb-platform
+[submodule "emb-platform"]
+	path = emb-platform
 	url = https://github.com/t0biasm/emb-platform.git
