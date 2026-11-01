@@ -9,6 +9,14 @@ Software for the Sumo Robot "Black Magic" (ATmega32U4), plus an Arduino Leonardo
 | `emb-toolchain` | submodule: [emb-toolchain](https://github.com/t0biasm/emb-toolchain), compilers and tooling |
 | `emb-platform` | submodule: [emb-platform](https://github.com/t0biasm/emb-platform), MCU platform code |
 
+## Overview
+![Sumobot "Black Magic" sketch](docs/sumobot-blackmagic-mini.jpg)
+
+- 100 mm overall length, 50 mm wide
+- Body: 6061-T6 aluminum; the blades are CNC machined
+- ATmega32U4 board with USB, JST connector and the right motor
+- Ground switch on the board
+
 ## Getting started
 ```
 git clone https://github.com/t0biasm/prj-sumobot.git
