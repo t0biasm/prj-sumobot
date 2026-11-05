@@ -4,3 +4,6 @@
 [submodule "emb-platform"]
 	path = emb-platform
 	url = https://github.com/t0biasm/emb-platform.git
+[submodule "ci/emb-ci"]
+	path = ci/emb-ci
+	url = https://github.com/t0biasm/emb-ci.git
