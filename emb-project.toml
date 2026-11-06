@@ -17,6 +17,6 @@ mode = "auto"
 track = "main"
 mode = "auto"
 
-[follow."ci/emb-ci"]
+[follow."emb-ci"]
 track = "main"
 mode = "auto"
